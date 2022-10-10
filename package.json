@@ -1,0 +1,18 @@
+{
+  "name": "Kata_Bingo",
+  "version": "1.0.0",
+  "description": "Kata Kata_Bingo",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --verbose",
+    "watch": "jest --watchAll --color --coverage --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.1.2"
+  }
+}
