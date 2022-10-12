@@ -12,14 +12,14 @@ Translate number to letter
 - 26 -> Z ✔
 
 Translate list of numbers to letters
-- [1] -> [A]
-- [1,2] -> [A,B]
-- [1,2,3,4,5,21,22,23,24,25] -> [A,B,C,D,E,F,G,U,V,W,X,Y]
+- [1] -> [A] ✔
+- [1,2] -> [A,B] ✔
+- [1,2,3,4,5,21,22,23,24,25] -> [A,B,C,D,E,F,G,U,V,W,X,Y] ✔
 
 Find letter in list of letters
-- A in [A] -> true
-- A in [] -> false
-- A in [B] -> false
+- A in [A] -> true ✔
+- A in [] -> false ✔
+- A in [B] -> false ✔
 
 Find all letters of bingo in a list of letters
 - 
