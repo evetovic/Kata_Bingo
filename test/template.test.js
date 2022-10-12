@@ -1,4 +1,13 @@
-const checkIfNumberIsOnCard = require('../src/template');
+const { checkIfNumberIsOnCard, extractNumberFromString} = require('../src/template');
+
+describe('When checking whether a number is on a card, we first want to extract the number from the letter/number combination ', () => {
+    it('B1 --> 1', () => {
+        expect(extractNumberFromString("B1")).toEqual(1);    
+    });
+    it('IOO15 --> 15', () => {
+        expect(extractNumberFromString("IOO15")).toEqual(15);
+    });
+});
 
 describe('We have to check if a number is present on the card', () => {
     const card = [

@@ -1,6 +1,11 @@
 function checkIfNumberIsOnCard(card, number) {
-    numberWithoutTheLetter = number.substring(1,2)
-    return card[1][0] == numberWithoutTheLetter
+    var numberWithoutTheLetter = extractNumberFromString(number);
+    return card[1].includes(numberWithoutTheLetter);
 }
 
-module.exports = checkIfNumberIsOnCard
+function extractNumberFromString(number) {
+    return parseInt(number.replace(/[^0-9\.]+/g, ""));
+}
+
+
+module.exports = { checkIfNumberIsOnCard, extractNumberFromString}

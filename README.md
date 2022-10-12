@@ -18,6 +18,11 @@ numbers = ['B1', 'I16', 'N31', 'G46', 'O61']
 Bingo? TRUE
 
 Atomic behaviors:
+Extract number from letter/number combi
+
+✔B1 --> 1
+✔IOO15 --> 15
+
 Determine if one of the numbers is on the card
 
 Given this card:
@@ -30,7 +35,7 @@ card = [
   [9, 24, 39, 54, 69]
 ]
 
-🍕- B1 --> true
+✔- B1 --> true
 - I16 --> true
 - G61 --> false
 - O61 --> true
