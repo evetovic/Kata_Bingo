@@ -17,8 +17,13 @@ function isLetterInList(letterToFind, letters) {
     return true
 }
 
+function isBingoInList(letters) {
+    return true
+}
+
 module.exports = {
     translateNumberToLetter,
     translateListOfNumbersToLetters,
-    isLetterInList
+    isLetterInList,
+    isBingoInList
 }

@@ -22,7 +22,14 @@ Find letter in list of letters
 - A in [B] -> false ✔
 
 Find all letters of bingo in a list of letters
-- 
+- [B,I,N,G,O]  -> true ✔
+- [B,U,N,G,O] -> false
+- [] -> false
+- [B,I,N,G,O,S,T,D,H,F]  -> true
+- [A,U,T,C,H] -> false
+
+
 
 ## Guard clauses
 - Number is always between 1 and 26 (inclusive)
+- Numbers in list are unique

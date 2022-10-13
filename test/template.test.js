@@ -1,7 +1,8 @@
 const {
     translateNumberToLetter,
     translateListOfNumbersToLetters,
-    isLetterInList
+    isLetterInList,
+    isBingoInList
 } = require('../src/template');
 
 describe('This is a testsuite for the BINGO kata', () => {
@@ -37,5 +38,12 @@ describe('This is a testsuite for the BINGO kata', () => {
         it('A in [B] -> false', () => {
             expect(isLetterInList('A', ['B'])).toEqual(false);
         });
+    });
+    describe('We want to find BINGO in the list of letters', () =>{
+        it('B,I,N,G,O] => true', () => {
+            expect(isBingoInList(['B','I','N','G','O'])).toEqual(true);
+            
+        });
+
     });
 });
